@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2b4a2b;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+header a:hover {
+    background-color: #4d734d;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.page {
+    height: 960px; /* Each section is 960px high */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home {
+    background-color: #f0f8f8;
+}
+
+#interests {
+    background-color: #e8f4ea;
+}
+
+#updates {
+    background-color: #eef4fa;
+}
+
+#skills {
+    background-color: #fcf4e4;
+}
+
+#contact {
+    background-color: #f8eef8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b4a2b;
+    color: white;
+}
