@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-behavior: smooth; 
 }
 
 /* Navigation Bar */
@@ -38,16 +38,121 @@ header a:hover {
 
 /* Section Styling */
 .page {
-    height: 960px; /* Each section is 960px high */
+    height: 960px; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+/* Home Section */
 #home {
-    background-color: #f0f8f8;
+    background: linear-gradient(135deg, rgb(236, 227, 206), rgb(224, 214, 190));
+    position: relative;
+    overflow: hidden; 
 }
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+#home .home-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative; 
+    z-index: 1;
+}
+
+#home .text {
+    flex: 1.2; 
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+#home .text h1 {
+    font-size: 3rem; 
+    font-weight: bold; 
+    margin-bottom: 30px; 
+    color: #2b4a2b; 
+    white-space: nowrap; 
+}
+
+#home .text p {
+    font-size: 1.25rem;
+    font-weight: 300; 
+    line-height: 1.8; 
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#home .image {
+    flex: 1; 
+    max-width: 50%;
+    display: flex;
+    justify-content: center; 
+    padding-left: 30px; 
+}
+
+#home .image img {
+    width: 80%; 
+    max-width: 400px;
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+#home .image img:hover {
+    transform: scale(1.05); 
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2b4a2b; 
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4d734d; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home .home-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    #home .text, #home .image {
+        max-width: 100%;
+        flex: none;
+    }
+
+    #home .image img {
+        width: 60%; 
+        margin: 20px auto; 
+    }
+
+    #home .text h1 {
+        white-space: normal; 
+    }
+}/* Home Section Ending*/
 
 #interests {
     background-color: #e8f4ea;
