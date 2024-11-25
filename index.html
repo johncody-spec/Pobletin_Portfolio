@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Cody Pobletin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>       
             <div class="logo">
-                <a href="#home"><img src="leaf.png" alt="Leaf Logo"></a>
+                <a href="#home"><img src="images/leaf.png" alt="Leaf Logo"></a>
             </div>
         <nav>
             <ul class="nav-links">
@@ -33,58 +35,180 @@
             <a href="#contact" class="cta-button" aria-label="Navigate to contact section">Let’s Connect</a>
         </div>
         <div class="image">
-            <img src="profile.png" alt="John Cody Pobletin">
+            <img src="images/profile.png" alt="John Cody Pobletin">
         </div>
     </div>
 </section>
 
 
-    <!-- Interests Section -->
-    <section id="interests" class="page">
-        <h2>What I Enjoy</h2>
-        <div class="content">
-            <div>Coding Projects</div>
-            <div>Gaming</div>
-            <div>Photography</div>
+<!-- Interests Section -->
+<section id="interests" class="page">
+    <div class="section-divider"></div> 
+    <div class="section-title">
+        <h2>My Interests</h2>
+        <p class="section-description">Here are a few things I’m passionate about and love exploring.</p>
+    </div>
+    <div class="interests-content">
+        <div class="interest" data-aos="fade-up">
+            <img src="images/coding.png" alt="Coding Icon">
+            <h3>Coding</h3>
+            <p>Building innovative solutions through web development and application design.</p>
         </div>
-    </section>
+        <div class="interest" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/design.png" alt="Design Icon">
+            <h3>Design</h3>
+            <p>Creating user-friendly interfaces with a focus on aesthetics and functionality.</p>
+        </div>
+        <div class="interest" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/gaming.png" alt="Gaming Icon">
+            <h3>Gaming</h3>
+            <p>Exploring immersive worlds and staying updated with gaming trends.</p>
+        </div>
+    </div>
+    <div class="section-divider"></div> 
+</section>
 
-    <!-- Updates Section -->
-    <section id="updates" class="page">
-        <h2>Highlights & Insights</h2>
-        <div class="content">
-            <div>My First Blog Post</div>
-            <div>Exploring New Tech</div>
-            <div>Tips for Web Dev</div>
+<!-- Updates Section -->
+<section id="updates" class="page">
+    <h2>Highlights & Insights</h2>
+    <div class="content">
+        <div class="update-card" data-aos="fade-up">
+            <img src="images/blogpost.jpg" alt="Blog Post" class="update-image"> 
+            <h3>My First Blog Post</h3>
+            <p>A deep dive into my journey in the world of web development.</p>
         </div>
-    </section>
+        <div class="update-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/newtech.jpg" alt="New Tech" class="update-image">
+            <h3>Exploring New Tech</h3>
+            <p>Insights on the latest technologies that are shaping the digital world.</p>
+        </div>
+        <div class="update-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/webdev.jpg" alt="Web Dev Tips" class="update-image">
+            <h3>Tips for Web Dev</h3>
+            <p>Practical tips and tricks to enhance your web development skills.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="page">
-        <h2>My Skills</h2>
-        <div class="content">
-            <div>HTML <span>90%</span></div>
-            <div>CSS <span>80%</span></div>
-            <div>JavaScript <span>85%</span></div>
-            <div>PHP <span>70%</span></div>
-            <div>Flutter <span>85%</span></div>
-            <div>Android Studio <span>95%</span></div>
+
+<!--skill section-->
+<section id="skills">
+    <h2>My Skills</h2>
+    <p class="section-description">
+        Experienced in web and mobile app development, leveraging technologies such as HTML, CSS, JavaScript, PHP, Flutter, and Android Studio to build dynamic and user-friendly applications.
+    </p>
+    
+    <div class="skills-container">
+        <div class="skills-left">
+            <div class="skill box">
+                <span class="title">HTML</span>
+                <div class="skill-bar">
+                    <span class="skill-per html" data-percent="90%">
+                        <span class="tooltip">90%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill box">
+                <span class="title">CSS</span>
+                <div class="skill-bar">
+                    <span class="skill-per css" data-percent="80%">
+                        <span class="tooltip">80%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill box">
+                <span class="title">JavaScript</span>
+                <div class="skill-bar">
+                    <span class="skill-per javascript" data-percent="85%">
+                        <span class="tooltip">85%</span>
+                    </span>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="skills-right">
+            <div class="skill box">
+                <span class="title">PHP</span>
+                <div class="skill-bar">
+                    <span class="skill-per php" data-percent="70%">
+                        <span class="tooltip">70%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill box">
+                <span class="title">Flutter</span>
+                <div class="skill-bar">
+                    <span class="skill-per flutter" data-percent="85%">
+                        <span class="tooltip">85%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill box">
+                <span class="title">Android Studio</span>
+                <div class="skill-bar">
+                    <span class="skill-per android-studio" data-percent="95%">
+                        <span class="tooltip">95%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="page">
+        <div class="contact-container">        
+            <div class="form-section">
+                <form>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name"  required>
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email"  required>
+                    
+                    <label for="message">Share Your Thoughts</label>
+                    <textarea id="message"  required></textarea>
+                    
+                    <button type="submit">Share Your Feedback</button>
+                </form>
+            </div>
+<div class="text-section">
+    <div class="leaf-background">
         <h2>Interested in Collaborating?</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Share your thoughts"></textarea>
-            <button type="submit">Share Your Feedback</button>
-        </form>
+        <p>Drop me a message!</p>
+    </div>
+    <div class="social-icons">
+        
+        <a href="https://www.instagram.com/_johncody/profilecard/?igsh=MXQ1MHp5N3B6aGs=" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        
+        <a href="https://www.facebook.com/share/15dCQVhUz6/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        
+        <a href="https://t.me/Johncodyerr" target="_blank" aria-label="Telegram">
+            <img src="images/telegram.png" alt="Telegram">
+        </a>
+        
+        <a href="https://x.com/CodyPobletin?t=olBn5XqL0J6g09RUXiLJzg&s=09" target="_blank" aria-label="X (formerly Twitter)">
+            <img src="images/twitter.png" alt="X (formerly Twitter)">
+        </a>
+    </div>
+</div>
+
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 John Cody Pobletin. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

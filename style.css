@@ -1,11 +1,10 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth; 
 }
 
-/* Navigation Bar */
+/* NAVIGATION BAR STARTING */
 header {
     position: fixed;
     top: 0;
@@ -56,9 +55,8 @@ header nav .nav-links a:hover {
     border-radius: 5px;
     border-color: #fff; 
 }
-/* Navigation Bar ending*/
+/* NAVIGATION BAR ENDING*/
 
-/* Section Styling */
 .page {
     height: 960px; 
     display: flex;
@@ -67,7 +65,7 @@ header nav .nav-links a:hover {
     text-align: center;
 }
 
-/* Home Section */
+/* HOME SECTION STARTING */
 #home {
     background: linear-gradient(135deg, rgb(236, 227, 206), rgb(224, 214, 190));
     position: relative;
@@ -153,23 +151,431 @@ header nav .nav-links a:hover {
 .cta-button:hover {
     background-color: #4d734d; 
 }
-/* Home Section Ending*/
+/* HOME SECTION ENDING*/
 
+/* INTEREST SECTION STARTING */
 #interests {
-    background-color: #e8f4ea;
+    background: linear-gradient(135deg, rgb(236, 227, 206), rgb(244, 240, 220)); 
+    padding: 60px 20px;
+    color: #333;
+    text-align: center;
+    position: relative;
 }
 
+#interests h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px; 
+    color: #4b7b4b; 
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 40px; 
+    font-style: italic;
+}
+
+.interests-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    margin-top: 40px; 
+}
+
+.interest {
+    flex: 1 1 280px;
+    background-color: rgb(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.interest:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+    background-color: #f4f9f4; 
+}
+
+.interest img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.interest:hover img {
+    transform: rotate(15deg); 
+}
+
+.interest h3 {
+    font-size: 1.8rem; 
+    color: #4b7b4b; 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+    transition: opacity 0.3s ease; 
+}
+
+.interest:hover h3 {
+    opacity: 0; 
+}
+
+.interest p {
+    font-size: 1.1rem;
+    color: #777;
+    line-height: 1.5;
+    transition: opacity 0.3s ease;
+    opacity: 0; 
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.interest:hover p {
+    opacity: 1; 
+}
+
+#interests .interest::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2); 
+    pointer-events: none;
+    transition: background 0.3s ease;
+}
+
+.interest:hover::after {
+    background: rgba(255, 255, 255, 0.4); 
+}
+/* INTEREST SECTION END */
+
+/* UPDATE SECTION STARING */
 #updates {
-    background-color: #eef4fa;
+    background-color: #f5f5f5; 
+    padding: 60px 20px;
+    color: #333;
+    text-align: center;
+}
+
+#updates h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #4b7b4b; 
+    font-weight: bold;
+}
+
+#updates .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+}
+
+.update-card {
+    flex: 1 1 280px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.update-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.update-card h3 {
+    font-size: 1.8rem;
+    color: #4b7b4b;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.update-card p {
+    font-size: 1.1rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+.update-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+/*UPDATE SECTION END*/
+
+/*SKILL SECTION STARTING*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
 }
 
 #skills {
-    background-color: #fcf4e4;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-#contact {
-    background-color: #f8eef8;
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
 }
+
+#skills .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.skills-left, .skills-right {
+    width: 48%;
+}
+
+.skill.box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.skill-bar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-per {
+    display: block;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    background-color: #2b4a2b;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: #fff;
+    width: 0; 
+    animation: progress 2s ease-out forwards;
+}
+
+.skill-per .tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.skill-per:hover .tooltip {
+    visibility: visible;
+}
+
+.skill-per.html {
+    --progress-width: 90%;
+}
+
+.skill-per.css {
+    --progress-width: 80%;
+}
+
+.skill-per.javascript {
+    --progress-width: 85%;
+}
+
+.skill-per.php {
+    --progress-width: 70%;
+}
+
+.skill-per.flutter {
+    --progress-width: 85%;
+}
+
+.skill-per.android-studio {
+    --progress-width: 95%;
+}
+
+@keyframes progress {
+    from {
+        width: 0; 
+    }
+    to {
+        width: var(--progress-width); 
+    }
+}
+
+.skill-per:before {
+    content: attr(data-percent);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+}
+/*SKILL SECTION END*/
+
+/*CONTACT SECTION START*/
+#contact {
+  background-color: #f6f1e8; 
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  gap: 2in; 
+}
+
+.form-section {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 18px;
+  color: #2b4a2b;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #2b4a2b; 
+  background-color: transparent; 
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button {
+  background-color: #2b4a2b;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #235d23;
+}
+
+.text-section {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.text-section h2 {
+  font-size: 45px; 
+  color: #2b4a2b;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  z-index: 1; 
+}
+
+.text-section p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+}
+
+.leaf-background {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leaf-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: url('images/leaf.png') no-repeat center;
+  background-size: 100%; 
+  opacity: 0.3; 
+  width: 600px;
+  height: 600px;
+  z-index: 0; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+  filter: grayscale(0%);
+}
+/*CONTACT SECTION END*/  
 
 footer {
     text-align: center;
